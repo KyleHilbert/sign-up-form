@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #0e0e0e;
+}
+
+.mainContainer {
+  display: flex;
+  height: 864px;
+  width: 85rem;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.leftSide {
+  border: 1px solid blue;
+  background-image: url("images/leaf.avif");
+  background-size: 30rem 100%;
+  width: 30rem;
+  height: 100%;
+}
+
+.logoAndText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 8rem;
+  width: 100%;
+  margin-top: 10rem;
+  padding: 10px;
+}
+
+.odinLogo {
+  height: 100%;
+  background: none;
+}
+
+.odinText {
+  color: white;
+  background: none;
+}
+
+.rightSide {
+  border: 1px solid green;
+  background-color: green;
+  width: 55rem;
+  height: 100%;
+}
