@@ -76,12 +76,12 @@ body {
 .top {
   height: 19rem;
   background-color: #f9fafb;
+  padding-left: 3rem;
 }
 
 .rightSide p {
   font-size: 1.5rem;
   width: 45rem;
-  padding-left: 3rem;
 }
 
 .rightSide p.first {
@@ -90,4 +90,11 @@ body {
 
 .rightSide p.last {
   padding-top: 2rem;
+}
+
+.middle {
+  height: 19rem;
+  background-color: red;
+  padding-left: 3rem;
+  padding-top: 1rem;
 }
