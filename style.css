@@ -65,7 +65,7 @@ body {
   color: white;
 }
 
-/*Start of right side content*/
+/*Start of right side top content*/
 
 .rightSide {
   background-color: white;
@@ -92,9 +92,60 @@ body {
   padding-top: 2rem;
 }
 
+/*Start of right side middle content*/
+
 .middle {
   height: 19rem;
-  background-color: red;
+  background-color: white;
+  box-shadow: 0 1px 5px rgb(68, 66, 66);
   padding-left: 3rem;
   padding-top: 1rem;
+}
+
+.forms {
+  display: flex;
+  width: 50rem;
+}
+
+.leftForm {
+  margin-right: 5rem;
+}
+
+.label {
+  padding-top: 2rem;
+}
+
+div.forms input {
+  border-radius: 3px;
+  border: 1px solid #e5e7eb;
+  height: 1.5rem;
+}
+
+/*Start of right side bottom content*/
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+button.createAccount {
+  width: 12rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #596d48;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.8rem;
+  margin: 2rem;
+}
+
+span.existingAccount {
+  margin-left: 2rem;
+}
+
+span.existingAccount a {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: bold;
 }
