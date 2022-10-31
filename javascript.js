@@ -22,16 +22,33 @@ const passwordTwo = document.querySelector("#passwordCheck");
 const leftForm = document.querySelector(".leftForm");
 const rightForm = document.querySelector(".rightForm");
 
-console.log(passwordOne);
-console.log(passwordTwo);
-console.log(leftForm);
-console.log(rightForm);
+// Creating element for missmatch passwords
+const notMatch = document.createElement("span");
+notMatch.textContent = "Passwords don't match!!!";
+notMatch.style.display = "none";
+notMatch.style.color = "red";
+notMatch.style.fontSize = ".8rem";
+rightForm.appendChild(notMatch);
+
+//console.log(passwordOne);
+//console.log(passwordTwo);
+//console.log(leftForm);
+//console.log(rightForm);
 
 function checkPasswords() {
   if (passwordOne.value === passwordTwo.value) {
-    console.log(passwordOne.value);
-    console.log(passwordTwo.value);
-  } else {
-    console.log("hi");
+    console.log("match");
+    notMatch.style.display = "none";
+    passwordOne.style.border = "1px solid #e5e7eb";
+    passwordTwo.style.border = "1px solid #e5e7eb";
+  } else if (
+    passwordOne.value != passwordTwo.value &&
+    passwordOne.value != "" &&
+    passwordTwo.value != ""
+  ) {
+    console.log("no match");
+    notMatch.style.display = "initial";
+    passwordOne.style.border = "1px solid red";
+    passwordTwo.style.border = "1px solid red";
   }
 }
